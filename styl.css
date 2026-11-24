@@ -1,0 +1,228 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F2F5FA;
+    font-family: Arial, sans-serif;
+    color: #252B36;
+    padding: 30px 15px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.header {
+    background-color: #123F91;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+
+.header {
+    background-color: #123F91;
+    padding: 20px 30px;
+    width: 100%;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 25px;
+}
+.header-content img{
+    width: 100px;
+    height: 100px;
+}
+.icone {
+    width: 85px;
+    height: 65px;
+    object-fit: contain;
+}
+
+
+.separateur {
+    width: 3px;
+    height: 65px;
+    background-color: white;
+}
+
+.header h1 {
+    color: white;
+    font-size: 38px;
+    margin: 0;
+}
+.header h1 {
+    font-size: 38px;
+}
+
+main {
+    padding: 25px 35px;
+}
+
+.profil {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 25px;
+}
+
+/* Photo */
+.photo {
+    width: 35%;
+}
+
+.photo img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border: 3px solid #174A9C;
+    border-radius: 25px;
+    padding: 4px;
+}
+
+/* Informations personnelles */
+.informations {
+    flex: 1;
+}
+
+.informations h2 {
+    color: #123F91;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.details {
+    border: 2px solid #C9D9F5;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.details h3 {
+    background-color: #EAF1FF;
+    color: #123F91;
+    font-size: 25px;
+    padding: 12px 18px;
+}
+
+.details p {
+    display: flex;
+    align-items: center;
+    padding: 7px 18px;
+    font-size: 20px;
+}
+
+.details strong {
+    color: #174A9C;
+    width: 120px;
+}
+
+/* Encadré À propos de moi */
+.apropos {
+    border: 2px solid #C9D9F5;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.apropos h3 {
+    background-color: #EAF1FF;
+    color: #123F91;
+    padding: 12px 20px;
+    font-size: 27px;
+}
+
+.apropos p {
+    padding: 15px 20px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* Bouton de contact */
+.contact {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact a {
+    display: inline-block;
+    background-color: #123F91;
+    color: white;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 40px;
+    font-size: 22px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Effet au survol */
+.contact a:hover {
+    background-color: #174A9C;
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 650px) {
+
+    .container {
+        width: 100%;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .header h1 {
+        font-size: 25px;
+    }
+
+    .profil {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .photo {
+        width: 75%;
+    }
+
+    .photo img {
+        height: 300px;
+    }
+
+    .informations {
+        width: 100%;
+    }
+
+    .informations h2 {
+        font-size: 28px;
+    }
+
+    .details h3 {
+        font-size: 21px;
+    }
+
+    .details p {
+        font-size: 16px;
+    }
+
+    .apropos h3 {
+        font-size: 22px;
+    }
+
+    .apropos p {
+        font-size: 17px;
+    }
+
+}
